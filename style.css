@@ -1,0 +1,70 @@
+body,html{
+    padding: 0;
+    margin: 0;
+}
+
+.navigation{
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    height:60px;
+    display: flex;
+    background-color: pink;
+    justify-content: space-between;
+    padding-inline: 10px;
+    /* visibility: hidden; */
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-basis: 300px;
+}
+
+.actions{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hero{
+    height:300px;
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    margin-top: 60px;
+    align-items: center;
+    padding-inline: 10px;
+    padding-block: 10px;
+    gap: 10px;
+}
+
+.hero .columns-container{
+    display: flex;
+    gap: 10px;
+}
+
+.hero .columns-container > div {
+    width: 50%;
+}
+
+
+.hero-img {
+    width: 100%;
+    min-width: 400px;
+}
+
+
+/* utility */
+.img-container {
+    display: flex;
+}
+
+.img-container > img{
+    display: block;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
