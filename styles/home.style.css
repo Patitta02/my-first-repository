@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #e9edc9;
+  display: grid;
+  grid-template-columns: auto max-content;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+  height: 55px;
+}
+
+.links-container > span {
+  display: inline-flex;
+  min-width: 80px;
+  height: 1.5rem;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.links-container > span > a {
+  color: #283618;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.2rem 0.5rem;
+}
+
+.links-container > span:hover {
+  background-color: rgba(229, 152, 155, 0.2);
+}
+
+.x-gap > * {
+  margin-right: 15px;
+}
+
+.content {
+  margin-top: 55px;
+  background-color: blue;
+  height: calc(100vh - 55px);
+
+  background-image: url("../img/pies_kawa.jpg");
+  background-position: center;
+  background-size: cover;
+
+  /* display: grid;
+
+    // align-items: center;
+  // justify-content: center;
+  place-items: center; */
+
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: #fff;
+  width: 600px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.container > div {
+  background-color: red;
+  display: grid;
+  place-items: center;
+}
+
+.container > div:nth-of-type(1) {
+  background-color: palevioletred;
+  grid-column: span 2;
+}
+
+.box-large {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
+}
+
+.box-large > div:nth-of-type(1) {
+  grid-column: span 2;
+}
+
+/* .box-large > div:nth-of-type(2) {
+  grid-column: span 2;
+} */
